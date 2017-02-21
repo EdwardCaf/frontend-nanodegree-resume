@@ -1,6 +1,4 @@
-
 // VARIABLES
-
 var HTMLheaderName = '<h1 class="animatedTop fadeInDownBig" id="name">%data%</h1>';
 var HTMLheaderRole = '<p class="animatedTop fadeInDownBig" id="role">%data%</p><hr>';
 

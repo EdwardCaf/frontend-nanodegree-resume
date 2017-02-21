@@ -33,7 +33,7 @@ window.onload = function() {
         var mousePos = calculateMousePos(evt);
         paddle1Y = mousePos.y - (PADDLE_HEIGHT/2);
       });
-}
+};
 
 $('.score').css(
   {
@@ -89,7 +89,7 @@ function moveEverything(){
        ballY < paddle1Y + PADDLE_HEIGHT){
          ballSpeedX = -ballSpeedX;
          var deltaY = ballY - (paddle1Y+PADDLE_HEIGHT/2);
-         ballSpeedY = deltaY * .35;
+         ballSpeedY = deltaY * '.35';
        }
     else if(ballX = 1){
     player2Score++;
@@ -126,7 +126,7 @@ function drawNet(){
 
 function drawEverything() {
   // Draws on Canvas
-  colorRect(0,0,canvas.width,canvas.height,'black');
+  colorRect(0,0,canvas.width,canvas.height,'#0daa15');
   if(showingWinScreen){
     canvasContext.fillStyle = "white";
     if (player1Score >= WINNING_SCORE && player2Score < WINNING_SCORE){
@@ -149,13 +149,13 @@ function drawEverything() {
   colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
   colorRect(canvas.width-PADDLE_THICKNESS,paddle2Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
   drawNet();
-  colorCircle(ballX,ballY,10,'white')
+  colorCircle(ballX,ballY,10,'white');
 }
 
 function colorCircle(centerX,centerY,radius,drawColor) {
   canvasContext.fillStyle = drawColor;
   canvasContext.beginPath();
-  canvasContext.arc(centerX,centerY,radius,0,Math.PI*2,true)
+  canvasContext.arc(centerX,centerY,radius,0,Math.PI*2,true);
   canvasContext.fill();
 }
 

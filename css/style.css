@@ -13,9 +13,12 @@ h6 {
     margin: 0;
     font-family: "Lato", sans-serif;
 }
-*{
+
+* {
     font-family: 'Lato', sans-serif!important;
+    font-size: 107%;
 }
+
 .clear-fix {
     overflow: auto;
 }
@@ -137,13 +140,14 @@ a {
 }
 
 .iButton {
-  float:right;
-  padding: 7px 13px;
-  border: 0 none;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top:1em;
+    float: right;
+    padding: 7px 13px;
+    border: 0 none;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 1em;
 }
 
 /* TODO: Replace with image later */
@@ -198,7 +202,7 @@ span {
 }
 
 #role {
-  padding-left: 10px;
+    padding-left: 10px;
 }
 
 #lets-connect {
@@ -241,8 +245,8 @@ span {
     }
 
     .iButton {
-      display: none;
-    }
+        display: none;
+    };
 }
 
 #map {
