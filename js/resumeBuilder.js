@@ -83,7 +83,7 @@ var projects = {
     "projects": [{
         "title": "Pong",
         "dates": "2016",
-        "description": "Programming",
+        "description": "Game of pong created through the Udemy course 'Code your first arcade game.'",
         "images": [
             "images/pic.png"
         ]

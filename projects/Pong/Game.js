@@ -1,3 +1,4 @@
+//This game was created throughout the 'Code Your First Arcade Game' course in Udemy 
 var canvas;
 var canvasContext;
 var ballX = 50;
