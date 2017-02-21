@@ -1,10 +1,4 @@
 //HEADER
-var myname = "Edward Cafarella";
-var formattedName = HTMLheaderName.replace("%data%", myname);
-var role = "Web Developer";
-var formattedRole = HTMLheaderRole.replace("%data%", role);
-$("#header").append(formattedName);
-$("#header").append(formattedRole);
 
 
 // BIO OBJECT
@@ -30,6 +24,12 @@ var bio = {
         var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
         var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
         var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+        var myname = "Edward Cafarella";
+        var formattedName = HTMLheaderName.replace("%data%", myname);
+        var role = "Web Developer";
+        var formattedRole = HTMLheaderRole.replace("%data%", role);
+        $("#header").append(formattedName);
+        $("#header").append(formattedRole);
         $("#header").append(formattedWelcomeMsg);
         $("#header").append(formattedMobile);
         $("#header").append(formattedEmail);
@@ -140,7 +140,6 @@ var education = {
         }
 
         // ONLINE COURSES
-
         for (var onlineClass = 0; onlineClass < education.onlineCourses.length; onlineClass++) {
             var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineClass].title);
             var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineClass].school);
@@ -170,5 +169,5 @@ work.display();
 education.display();
 projects.display();
 
-$(internationalizeButton).insertAfter("#role");
+$(internationalizeButton).insertAfter("#name");
 $("#mapDiv").append(googleMap);
