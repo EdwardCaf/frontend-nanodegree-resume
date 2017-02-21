@@ -111,7 +111,7 @@ var education = {
         "location": "Stony Brook",
         "major": "Philosophy",
         "dates": "2012-2014",
-        "degree": "Dropped out"
+        "degree": "Did not complete degree"
     }],
     "onlineCourses": [{
         "title": "Front-end Developer NanoDegree",
@@ -133,9 +133,9 @@ var education = {
             var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
             var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
             $(".education-entry").append(formattedName);
-            $(".education-entry").append(formattedDegree);
             $(".education-entry").append(formattedDates);
             $(".education-entry").append(formattedMajor);
+            $(".education-entry").append(formattedDegree);
             $(".education-entry").append(formattedLocation);
         }
 
